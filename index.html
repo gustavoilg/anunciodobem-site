@@ -4,89 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anúncio do Bem</title>
-
-    <!-- IMPORTANDO O CSS EXTERNO -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-    <img src="file_000000005d0c71f5885ae2f43d62e08f.png" alt="Logo Anúncio do Bem">
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#como-funciona">Como Funciona</a>
-        <a href="#impacto">Impacto</a>
-    </nav>
+<header class="top-bar">
+    <div class="header-container">
+        <img src="file_000000005d0c71f5885ae2f43d62e08f.png" class="logo">
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#impacto">Impacto</a>
+        </nav>
+    </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Transformando visualizações em solidariedade</h1>
-    <p>
-        No Anúncio do Bem, você ajuda pessoas sem gastar nada.  
-        Cada anúncio assistido gera receita — e destinamos tudo para quem mais precisa.
-    </p>
-</section>
+<div class="layout">
 
-<!-- SOBRE -->
-<section class="section" id="sobre">
-    <h2 class="section-title">O que é o Anúncio do Bem?</h2>
-    <p class="section-text">
-        Um projeto social digital onde qualquer pessoa pode colaborar apenas visualizando anúncios.
-        A plataforma arrecada através da publicidade e direciona 100% do lucro para famílias em situação de vulnerabilidade.
-    </p>
-</section>
+    <!-- SIDE ADS -->
+    <aside class="ads">
+        <div class="ad-box">Espaço para anúncios</div>
+        <div class="ad-box">Ad 300×600</div>
+    </aside>
 
-<!-- COMO FUNCIONA -->
-<section class="section" id="como-funciona">
-    <h2 class="section-title">Como funciona?</h2>
+    <!-- MAIN CONTENT -->
+    <main class="content">
 
-    <div class="cards">
-        <div class="card">
-            <h3>1. Você acessa</h3>
-            <p>Entra no site/app e assiste anúncios voluntariamente.</p>
-        </div>
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Transformando visualizações em solidariedade</h1>
+            <p>
+                No Anúncio do Bem, você ajuda pessoas sem gastar nada.  
+                Cada anúncio assistido gera receita — e destinamos tudo para quem mais precisa.
+            </p>
+        </section>
 
-        <div class="card">
-            <h3>2. Anunciantes pagam</h3>
-            <p>A receita da visualização é registrada e acumulada.</p>
-        </div>
+        <!-- SOBRE -->
+        <section class="section" id="sobre">
+            <h2 class="section-title">O que é o Anúncio do Bem?</h2>
+            <p class="section-text">
+                Um projeto social digital onde qualquer pessoa pode colaborar apenas visualizando anúncios.
+                A plataforma arrecada através da publicidade e direciona 100% do lucro para famílias em situação de vulnerabilidade.
+            </p>
+        </section>
 
-        <div class="card">
-            <h3>3. Doações são feitas</h3>
-            <p>Mensalmente destinamos 100% do valor arrecadado.</p>
-        </div>
-    </div>
-</section>
+        <!-- COMO FUNCIONA -->
+        <section class="section" id="como-funciona">
+            <h2 class="section-title">Como funciona?</h2>
 
-<!-- IMPACTO -->
-<section class="section" id="impacto">
-    <h2 class="section-title">Nosso impacto</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>1. Você acessa</h3>
+                    <p>Entra no site/app e assiste anúncios voluntariamente.</p>
+                </div>
 
-    <div class="cards">
-        <div class="card">
-            <h3>+0 famílias ajudadas</h3>
-            <p>Começamos agora — e vamos crescer juntos.</p>
-        </div>
+                <div class="card">
+                    <h3>2. Anunciantes pagam</h3>
+                    <p>A receita da visualização é registrada e acumulada.</p>
+                </div>
 
-        <div class="card">
-            <h3>Transparência total</h3>
-            <p>Relatórios mensais serão publicados no site.</p>
-        </div>
+                <div class="card">
+                    <h3>3. Doações são feitas</h3>
+                    <p>Mensalmente destinamos 100% do valor arrecadado.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>Comunidade do bem</h3>
-            <p>Milhares poderão ajudar apenas com um clique.</p>
-        </div>
-    </div>
-</section>
+        <!-- IMPACTO -->
+        <section class="section" id="impacto">
+            <h2 class="section-title">Nosso impacto</h2>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 Anúncio do Bem</p>
-    <p>Transformando anúncios em esperança.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>+0 famílias ajudadas</h3>
+                    <p>Começamos agora — e vamos crescer juntos.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Transparência total</h3>
+                    <p>Relatórios mensais serão publicados no site.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Comunidade do bem</h3>
+                    <p>Milhares poderão ajudar apenas com um clique.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="footer">
+    <p>© 2025 Anúncio do Bem — Transformando anúncios em esperança.</p>
 </footer>
 
 </body>
