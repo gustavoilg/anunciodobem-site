@@ -1,136 +1,173 @@
-/* ------------------------------- */
-/*   ESTILO GERAL                  */
-/* ------------------------------- */
+/* --------------------------- */
+/*   GERAL                    */
+/* --------------------------- */
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f8f9fb;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
     color: #222;
-    text-align: center;
 }
 
-.header {
-    padding: 40px 20px;
+/* --------------------------- */
+/*   HEADER                   */
+/* --------------------------- */
+
+.top-bar {
+    background: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .logo {
-    width: 140px;
-    margin-bottom: 10px;
-    animation: logo-zoom 1.2s ease forwards;
+    width: 80px;
 }
 
-.subtitle {
+/* MENU */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0077ff;
+}
+
+/* --------------------------- */
+/*   LAYOUT COM LATERAL       */
+/* --------------------------- */
+
+.layout {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* ADS LATERAIS */
+.ads {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ad-box {
+    background: #ddd;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* ÁREA PRINCIPAL */
+.content {
+    flex: 1;
+    padding-left: 40px;
+}
+
+/* --------------------------- */
+/*   HERO                     */
+/* --------------------------- */
+
+.hero {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* --------------------------- */
+/*   SEÇÕES                   */
+/* --------------------------- */
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.section-text {
     font-size: 18px;
     color: #555;
 }
 
-/* ------------------------------- */
-/*   HERO SECTION                  */
-/* ------------------------------- */
-
-.hero {
-    padding: 60px 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #1e88e5;
-    color: #fff;
-    border-radius: 10px;
-    margin-top: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover no botão */
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 16px rgba(0,0,0,0.2);
-}
-
-/* ------------------------------- */
-/*   CARDS                         */
-/* ------------------------------- */
+/* --------------------------- */
+/*   CARDS                    */
+/* --------------------------- */
 
 .cards {
     display: flex;
-    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 24px;
-    padding: 40px 20px;
 }
 
 .card {
-    background: #fff;
-    padding: 26px;
-    width: 280px;
-    border-radius: 14px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Hover nos cards */
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0px 10px 22px rgba(0,0,0,0.18);
-}
-
-/* ------------------------------- */
-/*   FOOTER                        */
-/* ------------------------------- */
+/* --------------------------- */
+/*   FOOTER                   */
+/* --------------------------- */
 
 .footer {
-    padding: 20px;
     background: #222;
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 25px;
     margin-top: 40px;
 }
 
-/* ------------------------------- */
-/*   ANIMAÇÕES                     */
-/* ------------------------------- */
+/* --------------------------- */
+/*   RESPONSIVIDADE           */
+/* --------------------------- */
 
-/* Fade-in genérico */
-.fade-in {
-    opacity: 0;
-    animation: fade 1.2s ease forwards;
-}
-
-.fade-in-delay {
-    opacity: 0;
-    animation: fade 1.2s ease forwards;
-    animation-delay: 0.5s;
-}
-
-@keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Slide-up */
-.slide-up {
-    opacity: 0;
-    transform: translateY(15px);
-    animation: slideUp 1s ease forwards;
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Logo zoom suave */
-@keyframes logo-zoom {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    .ads {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ad-box {
+        width: 45%;
+    }
+
+    .content {
+        padding-left: 0;
+    }
+
+    .cards {
+        justify-content: center;
+    }
 }
