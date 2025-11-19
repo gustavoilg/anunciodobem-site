@@ -5,101 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anúncio do Bem</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f8ff;
-            color: #333;
-        }
-
-        /* Header */
-        header {
-            background: #1e40af;
-            color: white;
-            padding: 20px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        header img {
-            height: 60px; /* tamanho médio */
-            border-radius: 12px;
-        }
-
-        nav a {
-            color: white;
-            margin-left: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: white;
-        }
-
-        .hero h1 {
-            font-size: 38px;
-            color: #1e40af;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        /* Section cards */
-        .section {
-            padding: 50px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .card h3 {
-            color: #1e40af;
-            margin-bottom: 10px;
-        }
-
-        /* Footer */
-        footer {
-            background: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-    </style>
+    <!-- IMPORTANDO O CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- HEADER -->
@@ -123,8 +32,8 @@
 
 <!-- SOBRE -->
 <section class="section" id="sobre">
-    <h2 style="text-align:center; font-size:28px; color:#1e40af;">O que é o Anúncio do Bem?</h2>
-    <p style="text-align:center; max-width:800px; margin:10px auto;">
+    <h2 class="section-title">O que é o Anúncio do Bem?</h2>
+    <p class="section-text">
         Um projeto social digital onde qualquer pessoa pode colaborar apenas visualizando anúncios.
         A plataforma arrecada através da publicidade e direciona 100% do lucro para famílias em situação de vulnerabilidade.
     </p>
@@ -132,7 +41,7 @@
 
 <!-- COMO FUNCIONA -->
 <section class="section" id="como-funciona">
-    <h2 style="text-align:center; font-size:28px; color:#1e40af;">Como funciona?</h2>
+    <h2 class="section-title">Como funciona?</h2>
 
     <div class="cards">
         <div class="card">
@@ -154,7 +63,7 @@
 
 <!-- IMPACTO -->
 <section class="section" id="impacto">
-    <h2 style="text-align:center; font-size:28px; color:#1e40af;">Nosso impacto</h2>
+    <h2 class="section-title">Nosso impacto</h2>
 
     <div class="cards">
         <div class="card">
