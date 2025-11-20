@@ -1,189 +1,161 @@
-/* =============================== */
-/*        PALETA DE CORES         */
-/* =============================== */
-
+/* ---------------------------- */
+/*   VARIÁVEIS DE COR           */
+/* ---------------------------- */
 :root {
-    --primary: #1e88e5;
-    --primary-dark: #1565c0;
-    --bg-light: #f3f8ff;
-    --text-dark: #222;
-    --text-light: #555;
-    --white: #ffffff;
+    --azul: #1e40af;
+    --azul-escuro: #1e3a8a;
+    --azul-claro: #3b82f6;
+    --fundo: #f4f8ff;
+    --texto: #222;
 }
 
-/* =============================== */
-/*       ESTILO GERAL             */
-/* =============================== */
-
+/* ---------------------------- */
+/*   GERAL                      */
+/* ---------------------------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: var(--bg-light);
-    color: var(--text-dark);
+    background: var(--fundo);
+    color: var(--texto);
 }
 
-/* =============================== */
-/*            HEADER              */
-/* =============================== */
-
-header {
-    background: var(--primary-dark);
-    padding: 18px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--white);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-
-header img {
-    height: 55px;
-    border-radius: 8px;
-}
-
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 17px;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-nav a:hover {
-    opacity: 0.75;
-}
-
-/* =============================== */
-/*            HERO                */
-/* =============================== */
-
-.hero {
-    text-align: center;
-    padding: 70px 20px;
-    background: var(--white);
-    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-}
-
-.hero h1 {
-    color: var(--primary-dark);
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: var(--text-light);
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-/* =============================== */
-/*           SEÇÕES               */
-/* =============================== */
-
-.section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.section-title {
-    text-align: center;
-    color: var(--primary-dark);
-    font-size: 32px;
-    margin-bottom: 12px;
-}
-
-.section-text {
-    text-align: center;
-    color: var(--text-light);
-    max-width: 800px;
-    margin: 10px auto 30px auto;
-    font-size: 18px;
-}
-
-/* =============================== */
-/*          CARDS GRID            */
-/* =============================== */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: var(--white);
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.09);
-    text-align: center;
-    transition: 0.25s ease-out;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
-}
-
-.card h3 {
-    color: var(--primary-dark);
-    margin-bottom: 8px;
-}
-
-/* =============================== */
-/*            SIDEBAR             */
-/* =============================== */
-
+/* ---------------------------- */
+/*   SIDEBAR (ANÚNCIOS)         */
+/* ---------------------------- */
 .sidebar {
     position: fixed;
+    top: 0;
     right: 0;
-    top: 120px;
-    width: 300px;
-    background: var(--white);
-    box-shadow: -3px 0 12px rgba(0,0,0,0.12);
-    padding: 20px;
-    border-radius: 12px 0 0 12px;
+    width: 160px;
+    height: 100%;
+    background: white;
+    padding: 20px 10px;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.1);
 }
 
 .sidebar-title {
-    font-size: 20px;
     font-weight: bold;
-    color: var(--primary-dark);
-    margin-bottom: 15px;
+    color: var(--azul);
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .ad-box {
     width: 100%;
-    height: 260px;
-    background: var(--bg-light);
-    border: 2px dashed var(--primary);
+    height: 250px;
+    background: #eee;
     border-radius: 10px;
+    border: 2px dashed #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-dark);
-    font-size: 16px;
+    font-size: 14px;
 }
 
-/* =============================== */
-/*            FOOTER              */
-/* =============================== */
+/* ---------------------------- */
+/*   HEADER                     */
+/* ---------------------------- */
+header {
+    background: var(--azul);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-right: 170px; /* espaço da sidebar */
+}
 
+header img {
+    width: 120px; /* tamanho final corrigido */
+    border-radius: 12px;
+}
+
+/* MENU */
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------- */
+/*   HERO                      */
+/* ---------------------------- */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+    margin-right: 160px; /* sidebar */
+}
+
+.hero h1 {
+    color: var(--azul);
+    font-size: 34px;
+}
+
+/* ---------------------------- */
+/*   SEÇÕES                     */
+/* ---------------------------- */
+.section {
+    padding: 50px 20px;
+    margin-right: 160px; /* sidebar */
+}
+
+.section-title {
+    text-align: center;
+    color: var(--azul);
+    font-size: 28px;
+}
+
+.section-text {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* ---------------------------- */
+/*   CARDS                      */
+/* ---------------------------- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 26px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: var(--azul);
+}
+
+/* ---------------------------- */
+/*   FOOTER                     */
+/* ---------------------------- */
 footer {
-    background: var(--primary-dark);
-    color: var(--white);
+    background: var(--azul-escuro);
+    color: white;
     text-align: center;
     padding: 25px;
-    margin-top: 40px;
-    font-size: 16px;
+    margin-top: 30px;
+    margin-right: 160px; /* sidebar */
 }
 
-/* =============================== */
-/*          ANIMAÇÕES             */
-/* =============================== */
-
+/* ---------------------------- */
+/*   ANIMAÇÕES                  */
+/* ---------------------------- */
 .fade-in {
     opacity: 0;
     animation: fade 1.2s forwards;
@@ -194,12 +166,15 @@ footer {
     to { opacity: 1; }
 }
 
-/* zoom leve */
-.logo-zoom {
-    animation: logoZoom 1s ease forwards;
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
 }
 
-@keyframes logoZoom {
-    from { transform: scale(0.85); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
