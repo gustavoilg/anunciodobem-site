@@ -20,39 +20,6 @@ body {
 }
 
 /* ---------------------------- */
-/*   SIDEBAR (ANÚNCIOS)         */
-/* ---------------------------- */
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 160px;
-    height: 100%;
-    background: white;
-    padding: 20px 10px;
-    box-shadow: -4px 0 12px rgba(0,0,0,0.1);
-}
-
-.sidebar-title {
-    font-weight: bold;
-    color: var(--azul);
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.ad-box {
-    width: 100%;
-    height: 250px;
-    background: #eee;
-    border-radius: 10px;
-    border: 2px dashed #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-}
-
-/* ---------------------------- */
 /*   HEADER                     */
 /* ---------------------------- */
 header {
@@ -62,11 +29,10 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
-    margin-right: 170px; /* espaço da sidebar */
 }
 
 header img {
-    width: 120px; /* tamanho final corrigido */
+    width: 120px;
     border-radius: 12px;
 }
 
@@ -82,7 +48,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
 /* ---------------------------- */
 /*   HERO                      */
 /* ---------------------------- */
@@ -90,7 +55,6 @@ nav a:hover {
     text-align: center;
     padding: 70px 20px;
     background: white;
-    margin-right: 160px; /* sidebar */
 }
 
 .hero h1 {
@@ -103,7 +67,6 @@ nav a:hover {
 /* ---------------------------- */
 .section {
     padding: 50px 20px;
-    margin-right: 160px; /* sidebar */
 }
 
 .section-title {
@@ -150,7 +113,6 @@ footer {
     text-align: center;
     padding: 25px;
     margin-top: 30px;
-    margin-right: 160px; /* sidebar */
 }
 
 /* ---------------------------- */
