@@ -353,3 +353,17 @@ body{
   color: var(--muted);
   font-size: 15px;
 }
+/* ============================
+   LAYOUT GLOBAL COM SIDEBAR
+   ============================ */
+.main-wrapper {
+    margin-right: 200px; /* espaço para a sidebar */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
