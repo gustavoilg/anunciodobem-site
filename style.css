@@ -314,3 +314,42 @@ body{
     padding: 20px 0;
   }
 }
+/* COMO FUNCIONA — NOVO LAYOUT */
+.steps-section {
+  text-align: center;
+}
+
+.steps-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.step-card {
+  background: var(--card);
+  padding: 26px 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  transition: 0.25s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(16,24,40,0.10);
+}
+
+.step-icon {
+  margin-bottom: 12px;
+}
+
+.step-card h3 {
+  margin: 8px 0;
+  color: var(--primary-dark);
+  font-size: 20px;
+}
+
+.step-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
