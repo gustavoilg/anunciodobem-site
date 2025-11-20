@@ -1,3 +1,4 @@
+
 // menu toggle for mobile
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.getElementById('menuToggle');
@@ -5,13 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (menuToggle) {
     menuToggle.addEventListener('click', () => {
-      if (mainNav.style.display === 'flex') {
-        mainNav.style.display = 'none';
-      } else {
-        mainNav.style.display = 'flex';
-        mainNav.style.flexDirection = 'column';
-        mainNav.style.gap = '12px';
-      }
+      mainNav.classList.toggle('open');
     });
   }
 
@@ -22,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // fecha o menu ao clicar em um link no mobile
+        if (mainNav.classList.contains('open')) {
+          mainNav.classList.remove('open');
+        }
       }
     });
   });
@@ -42,14 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
           console.log('share canceled', err);
         }
       } else {
-        // fallback: copy url
         navigator.clipboard.writeText(window.location.href);
         alert('Link copiado. Compartilhe com seus amigos!');
       }
     });
   }
 
-  // simple stat animation (numbers start at 0)
+  // simple stat animation
   const statEls = document.querySelectorAll('.stat-value');
   statEls.forEach(el => {
     const target = parseInt(el.dataset.target || '0', 10);
